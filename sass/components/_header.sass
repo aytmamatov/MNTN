@@ -6,11 +6,13 @@
   color: var(--light)
 
   &__text
-    font-family: var(--font-gilroy)
     font-weight: bold
     font-size: 18px
     line-height: 1.2
     color: var(--light)
+
+  &__top
+    margin-bottom: 200px
 
   &__logo
     font-family: var(--font-chronicle)
@@ -33,7 +35,6 @@
     align-items: center
     &-text
       margin-left: 8px
-      font-family: var(--font-gilroy)
       font-weight: bold
       font-size: 17px
       line-height: 1.25
@@ -50,3 +51,45 @@
       margin-bottom: 24px
       &:last-child
         margin-bottom: 0
+
+  &__middle
+    display: flex
+    justify-content: center
+
+    &-wrap
+      max-width: 950px
+
+  &__subtitle
+    padding-left: 104px
+    position: relative
+    display: inline-block
+    font-weight: 800
+    letter-spacing: 6px
+    text-transform: uppercase
+    margin-bottom: 32px
+    color: var(--accent)
+    &::before
+      content: ''
+      position: absolute
+      top: 50%
+      left: 0
+      transform: translateY(-50%)
+      width: 100%
+      max-width: 72px
+      height: 2px
+      background: var(--accent)
+
+  &__caption
+    font-family: var(--font-chronicle)
+    font-weight: 600
+    font-size: 88px
+    line-height: 1.25
+    text-transform: capitalize
+    margin-bottom: 55px
+
+  &__scroll
+    display: flex
+    align-items: center
+
+    &-text
+      margin-right: 15px
