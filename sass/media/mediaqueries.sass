@@ -11,8 +11,15 @@
   .container
     max-width: var(--xl-width)
   .header
-    &__top
-      margin-bottom: 100px
+    &__nav
+      display: none
+    &__social
+      margin-top: 55px
+    &__caption
+      font-size: 40px
+    &__middle
+      &-wrap
+        max-width: 500px
 
 @media screen and (max-width: 992px)
   .container
@@ -21,7 +28,42 @@
 @media screen and (max-width: 768px)
   .container
     max-width: var(--md-width)
+  .header
+    &__subtitle
+      padding-left: 50px
+      font-size: 14px
+      &::before
+        max-width: 35px
+    &__caption
+      font-size: 30px
+    &__middle
+      &-wrap
+        max-width: 350px
+    &__slider
+      margin-top: 25px
+    &__social
+      display: flex
+      justify-content: center
+      align-items: center
+      position: absolute
+      bottom: 20px
+      &-wrap
+        display: flex
+        margin-right: 20px
+      &-icon, &-text
+        margin-right: 24px
+        margin-bottom: 0
+        &:last-child
+          margin-right: 0
+      &-text
+        writing-mode: horizontal-tb
 
 @media screen and (max-width: 576px)
   .container
     max-width: var(--sm-width)
+  .header
+    &__caption
+      font-size: 22px
+    &__middle
+      &-wrap
+        max-width: 300px
