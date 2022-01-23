@@ -1,0 +1,68 @@
+.card-wrapper
+  width: 100%
+  background: linear-gradient(180deg, rgba(11, 29, 38, 0) 0%, #0B1D26 61.38%)
+
+  span
+    display: block
+
+.card
+  max-width: 1462px
+  margin: 0 auto
+  display: flex
+  justify-content: center
+  align-items: center
+
+  &__text-content
+    width: 50%
+    padding: 0px 57px
+
+  &__small-title
+    color: var(--accent)
+    position: relative
+    margin-bottom: 27px
+    font-size: 18px
+    letter-spacing: 6px
+    padding-left: 104px
+    font-weight: 800
+
+    &::before
+      content: ""
+      position: absolute
+      top: 50%
+      left: 0
+      transform: translateY(-50%)
+      width: 100%
+      max-width: 72px
+      height: 2px
+      background: var(--accent)
+
+  &__title
+    font-family: var(--font-chronicle)
+    color: var(--light)
+    font-size: 64px
+    line-height: 77px
+    margin-bottom: 27px
+
+  &__description
+    color: var(--light)
+    font-weight: bold
+    font-size: 18px
+    line-height: 32px
+    margin-bottom: 30px
+
+  &__link
+    a
+      color: var(--accent)
+      text-decoration: none
+      font-size: 18px
+
+  &__image-content
+    width: 50%
+    height: auto
+    padding: 0px 57px
+    img
+      widht: 566px
+      heigth: 720px
+
+  &__text-content
+    width: 50%
