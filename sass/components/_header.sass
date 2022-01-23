@@ -1,0 +1,52 @@
+.header
+  position: relative
+  padding-top: 64px
+  height: 100vh
+  background: url('./../images/header/header_bg.png') no-repeat center center / cover
+  color: var(--light)
+
+  &__text
+    font-family: var(--font-gilroy)
+    font-weight: bold
+    font-size: 18px
+    line-height: 1.2
+    color: var(--light)
+
+  &__logo
+    font-family: var(--font-chronicle)
+    font-size: 32px
+    line-height: 1.2
+    letter-spacing: 0.01em
+    text-transform: capitalize
+
+  &__nav
+    display: flex
+    justify-content: space-between
+
+  &__link
+    margin-right: 40px
+    &:last-child
+      margin-right: 0
+
+  &__account
+    display: flex
+    align-items: center
+    &-text
+      margin-left: 8px
+      font-family: var(--font-gilroy)
+      font-weight: bold
+      font-size: 17px
+      line-height: 1.25
+
+  &__social
+    position: absolute
+    top: 50%
+    transform: translateY(-20%)
+    &-text
+      writing-mode: tb
+      margin-bottom: 24px
+    &-icon
+      display: block
+      margin-bottom: 24px
+      &:last-child
+        margin-bottom: 0
