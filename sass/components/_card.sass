@@ -1,6 +1,6 @@
 .card-wrapper
-  padding-top: -120px
   position: relative
+  padding: 200px 0
   margin-top: -260px
 
   &:before
@@ -22,11 +22,22 @@
   display: flex
   justify-content: center
   align-items: center
+  margin-bottom: 200px
+  &:last-child
+    margin-bottom: 0
 
   &__text-content
     width: 50%
     padding: 0px 57px
 
+  &__number
+    transform: translate(-24.5%, 60%)
+    font-weight: bold
+    font-size: 240px
+    color: var(--light)
+    opaciy: .1
+
+    opacity: 0.1
   &__small-title
     color: var(--accent)
     position: relative
@@ -70,10 +81,13 @@
   &__image-content
     width: 50%
     height: auto
-    padding: 0px 57px
+    margin: 0px 57px
     img
       widht: 566px
       heigth: 720px
 
   &__text-content
     width: 50%
+
+  &__negative-order
+    order: -1
