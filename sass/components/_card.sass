@@ -1,23 +1,31 @@
 .card-wrapper
   position: relative
-  background: var(--dark-jungle-green)
-  padding: 200px 0
-  margin-top: -260px
+  padding: 100px 0
+  margin-top: -500px
+  overflow: hidden
 
-  &::before
+  &::before, &::after
     content: ''
     position: absolute
     top: 0
     left: 0
     width: 100%
+
+  &::before
+    height: 700px
+    background: linear-gradient(180deg, rgba(11, 29, 38, 0) 0%, #0B1D26 61.38%)
+
+  &::after
+    top: 690px
     height: 100%
-    background: linear-gradient(180deg, rgba(11, 29, 38, 0) 0%, #0B1D26 29%)
+    background: var(--dark-jungle-green)
 
   span
     display: block
 
 .card
   position: relative
+  z-index: 2
   max-width: var(--xxl-section-size)
   margin: 0 auto
   display: flex
@@ -88,8 +96,7 @@
     height: auto
     margin: 0px 57px
     img
-      widht: 566px
-      heigth: 720px
+      width: 100%
 
   &__text-content
     width: 50%
